@@ -38,7 +38,7 @@ const DaysGrid = ({
           ${isSameMonth(currentDate, day) ? "primary" : "secondary"}
           ${isSameDay(selectedDate, day) && "active"}
           ${
-            datesWithEvents.filter((item) => isSameDay(item.date, day)).length
+            datesWithEvents.filter((item) => isSameDay(item.date, today)).length
               ? "have-event"
               : ""
           }
