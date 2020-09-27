@@ -1,0 +1,31 @@
+.about-page {
+    margin-top: 20px;
+    color: #3d3d3d;
+
+    .about-text {
+
+        .title {
+            font-size: 34px;
+            margin-bottom: 70px;
+        }
+
+        .description {
+            font-size: 20px;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-page {
+        padding: 0 100px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .about-page {
+        padding: 10px;
+    }
+}

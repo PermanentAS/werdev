@@ -1,0 +1,60 @@
+.days-grid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    .days-row {
+        display: flex;
+        text-transform: uppercase;
+        justify-content: space-between;
+    }
+
+    .day-container {
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+
+        &.primary {
+            color: #fff;
+        }
+
+        &.secondary {
+            color: rgb(175, 175, 175);
+        }
+
+        &.active {
+            background-color: #FDD000;
+            color: #3d3d3d;
+            font-weight: 500;
+
+            &.have-event {
+                color: #3d3d3d;
+
+                &:after {
+                    color: #3d3d3d;
+                }
+            }
+        }
+
+        &:after {
+            position: absolute;
+            left: 40%;
+            bottom: -5%;
+            color: transparent;
+            content: "●";
+        }
+
+        &.have-event {
+            color: #FDD000;
+
+            &:after {
+                color: #FDD000
+            }
+        }
+    }
+}
